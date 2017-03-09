@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>smelinda</title>
+		<title>smelinda.github.io</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -74,30 +74,57 @@
 							</section>
 
 						<!-- Three -->
-							<!--section id="three">
+							<section id="three">
 								<div class="container">
 									<h3>Projects</h3>
 									<p>Some interesting data-related projects.</p>
 									<div class="features">
 										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/mse2.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Music Search Engine and Data Warehouse</h4>
-												<p>We built data warehouse from scratch by consuming data from </p>
+												<h4>Music search engine and data warehouse</h4>
+												<p>Search engine implementation for music data, including lyrics,
+													which allows users to search for music-related
+													information, provides recommendation and
+													analytics about the song.<br/>
+													Sources were integrated from own-built data warehouse, from
+													<a href="https://musicbrainz.org/doc/MusicBrainz_Database"> openly-available
+														dataset</a> and APIs (
+												<a href="http://www.last.fm/api">Last.fm</a>,
+												<a href="http://developer.echonest.com/docs/v4">Echonest</a>,
+												<a href="https://developer.spotify.com/web-api/object-model/">Spotify</a>,
+												etc). The data warehouse stayed up-to-date by running monthly ETL process using
+													<a href="http://community.pentaho.com/projects/data-integration/">Pentaho Kettle</a>.
+													The search engine was implemented using
+													<a href="http://lucene.apache.org/solr/">Apache Solr</a>
+													for indexing and an open-source module for spell-checker.</p>
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/tdm.png" alt="" /></a>
 											<div class="inner">
-												<h4>Terraformed a small moon</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>Trajectory data mining</h4>
+												<p>Clustering trajectory data from
+													<a href="http://homepages.inf.ed.ac.uk/rbf/FORUMTRACKING/">
+														Edinburgh Informatics Forum Pedestrian Database</a>
+													using edit distance with real penalty and
+													discrete Frechet distance algorithm. It was a part of Data Mining
+													research in <a href="http://www.info.univ-tours.fr/diblois/en/">UFRT</a>.
+													The research was implemented using several libraries in Java, R and C++.</p>
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/fpgrowth.png" alt="" /></a>
 											<div class="inner">
-												<h4>Snapped dark matter in the wild</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>Frequent pattern mining in Apache Flink</h4>
+												<p>Implementing frequent pattern mining algorithm using
+													<a href="https://flink.apache.org/">Apache Flink</a>
+													to enhance <a href="https://ci.apache.org/projects/flink/flink-docs-release-1.2/dev/libs/ml/index.html">FlinkML</a>
+													machine learning library. We used
+													<a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/34668.pdf">Parallel
+														FPGrowth for Query Recommendation</a> as the algorithm and
+													assess the performance in a cluster compared to
+													<a href="http://spark.apache.org/">Apache Spark</a>.</p>
 											</div>
 										</article>
 									</div>
